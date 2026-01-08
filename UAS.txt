@@ -1,0 +1,83 @@
+https://github.com/CopiousBook2386/UTS
+
+https://youtu.be/BtXVtAg3wAQ?si=BtqxEUrGPP_ROfku
+
+JONATHAN RAFER SETIJO
+A11.2024.15542
+PBW A11.4315
+
+instruksi penggunaan web :
+- untuk filter harga : periksa semua harga yang tertera di web, filter harga menyediakan fitur min dan max harga yang ingin di filter, gunakan angka saja tanpa huruf atau titik
+
+CONTOH :
+min : 10000000
+max : 100000000
+
+- searching : hanya menerima pencarian berdasarkan nama item yang ingin di cari
+
+CONTOH :
+smarthphone
+
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) UNIQUE,
+  password VARCHAR(255)
+);
+
+INSERT INTO users (username, password)
+VALUES (
+  'admin',
+  'admin123'
+);
+
+CREATE TABLE products (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  price INT NOT NULL,
+  stock INT NOT NULL,
+  image VARCHAR(255),
+  category VARCHAR(50)
+);
+
+INSERT INTO products (name, price, stock, image, category) VALUES
+('Laptop Pro 14"', 14500000, 5, 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8', 'beranda'),
+('Smart TV 43"', 5300000, 8, 'https://images.unsplash.com/photo-1593359677879-a4bb92f829d1', 'beranda'),
+('Headphone X', 870000, 20, 'https://images.unsplash.com/photo-1526178616111-74d72c4ee6f2', 'beranda'),
+('Jaket Kulit Pria', 650000, 10, 'https://images.unsplash.com/photo-1520975922284-9fdb84d83b8d', 'beranda'),
+('Sofa Minimalis', 2700000, 4, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff', 'beranda'),
+('Sepatu Sneaker', 480000, 15, 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4', 'beranda'),
+('Lampu Meja Modern', 230000, 12, 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c', 'beranda'),
+('Setrika Listrik', 310000, 6, 'https://images.unsplash.com/photo-1581579185169-ec1f55d38f22', 'beranda'),
+('Kamera Mirrorless', 9700000, 7, 'https://images.unsplash.com/photo-1519183071298-a2962be96c81', 'beranda'),
+('Jam Tangan Digital', 780000, 9, 'https://images.unsplash.com/photo-1519741497674-611481863552', 'beranda'),
+('Kaos Polos Cotton', 120000, 25, 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab', 'fashion'),
+('Celana Jeans Slim', 320000, 18, 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246', 'fashion'),
+('Kemeja Flanel', 280000, 10, 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c', 'fashion'),
+('Topi Baseball', 95000, 30, 'https://images.unsplash.com/photo-1521369909029-2afed882baee', 'fashion'),
+('Hoodie Oversize', 340000, 8, 'https://images.unsplash.com/photo-1556821840-3a63f95609a7', 'fashion'),
+('Rok Midi Wanita', 250000, 7, 'https://images.unsplash.com/photo-1520975916090-3105956dac38', 'fashion'),
+('Jaket Denim', 420000, 5, 'https://images.unsplash.com/photo-1520974735194-6c00e13b1a92', 'fashion'),
+('Sepatu Boots', 670000, 6, 'https://images.unsplash.com/photo-1603808033192-082d6919d3e1', 'fashion'),
+('Tas Selempang', 230000, 11, 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa', 'fashion'),
+('Kacamata Stylish', 180000, 15, 'https://images.unsplash.com/photo-1511499767150-a48a237f0083', 'fashion'),
+('Kursi Kayu Jati', 850000, 5, 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc', 'perabot'),
+('Meja Belajar', 640000, 6, 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4', 'perabot'),
+('Rak Buku', 550000, 9, 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7', 'perabot'),
+('Lemari Pakaian', 1450000, 4, 'https://images.unsplash.com/photo-1598300056815-865c2b9caa6d', 'perabot'),
+('Kasur Spring Bed', 2800000, 3, 'https://images.unsplash.com/photo-1505691938895-1758d7feb511', 'perabot'),
+('Meja Makan 4 Kursi', 1900000, 2, 'https://images.unsplash.com/photo-1503602642458-232111445657', 'perabot'),
+('Cermin Dinding', 275000, 10, 'https://images.unsplash.com/photo-1582582494700-69f7e34a9a7b', 'perabot'),
+('Gantungan Baju', 85000, 20, 'https://images.unsplash.com/photo-1585386959984-a415522c6f15', 'perabot'),
+('Vas Bunga', 95000, 15, 'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6', 'perabot'),
+('Tirai Jendela', 210000, 12, 'https://images.unsplash.com/photo-1524758631624-e2822e304c36', 'perabot'),
+('Smartphone 5G', 6800000, 8, 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9', 'elektronik'),
+('Tablet Android', 3700000, 10, 'https://images.unsplash.com/photo-1542751110-97427bbecf20', 'elektronik'),
+('Smartwatch X2', 1500000, 15, 'https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b', 'elektronik'),
+('Earbuds Wireless', 950000, 25, 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df', 'elektronik'),
+('Kipas Angin', 380000, 12, 'https://images.unsplash.com/photo-1581579185169-ec1f55d38f22', 'elektronik'),
+('Blender Dapur', 420000, 9, 'https://images.unsplash.com/photo-1571687949920-bb74dfb5f6b3', 'elektronik'),
+('Microwave Oven', 980000, 5, 'https://images.unsplash.com/photo-1586201375754-1421e9f91f6a', 'elektronik'),
+('Kulkas 2 Pintu', 3300000, 3, 'https://images.unsplash.com/photo-1580910051074-7b92a1b5b9b1', 'elektronik'),
+('Speaker Bluetooth', 670000, 11, 'https://images.unsplash.com/photo-1583225214464-9296029427aa', 'elektronik'),
+('Vacuum Cleaner', 890000, 6, 'https://images.unsplash.com/photo-1581579185169-ec1f55d38f22', 'elektronik');
