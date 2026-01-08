@@ -1,4 +1,4 @@
-https://github.com/CopiousBook2386/UTS
+https://github.com/CopiousBook2386/UAS
 
 https://youtu.be/BtXVtAg3wAQ?si=BtqxEUrGPP_ROfku
 
@@ -81,3 +81,4 @@ INSERT INTO products (name, price, stock, image, category) VALUES
 ('Kulkas 2 Pintu', 3300000, 3, 'https://images.unsplash.com/photo-1580910051074-7b92a1b5b9b1', 'elektronik'),
 ('Speaker Bluetooth', 670000, 11, 'https://images.unsplash.com/photo-1583225214464-9296029427aa', 'elektronik'),
 ('Vacuum Cleaner', 890000, 6, 'https://images.unsplash.com/photo-1581579185169-ec1f55d38f22', 'elektronik');
+
